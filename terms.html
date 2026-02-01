@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Terms of Service for Sawari - Shamisen Tuning App">
-    <title>Terms of Service - Sawari</title>
+    <title data-i18n="page_title">Terms of Service - Sawari</title>
     <style>
         :root {
             --app-background: #ffffff;
@@ -50,6 +50,41 @@
             padding: 20px;
             display: flex;
             justify-content: center;
+        }
+
+        .language-selector {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .language-selector select {
+            background: var(--glass-overlay);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            color: var(--text-primary);
+            padding: 8px 28px 8px 12px;
+            font-size: 15px;
+            font-family: var(--font-family);
+            cursor: pointer;
+            appearance: none;
+            background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8"%3E%3Cpath fill="%23007aff" d="M6 8L0 0h12z"/%3E%3C/svg%3E');
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .language-selector select {
+                background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8"%3E%3Cpath fill="%230a84ff" d="M6 8L0 0h12z"/%3E%3C/svg%3E');
+            }
+        }
+
+        .language-selector select:focus {
+            outline: 2px solid var(--accent-color);
+            outline-offset: 2px;
         }
 
         .container {
@@ -157,6 +192,11 @@
                 padding: 16px;
             }
 
+            .language-selector {
+                top: 16px;
+                right: 16px;
+            }
+
             .container {
                 padding: 24px;
                 margin: 0;
@@ -175,146 +215,166 @@
 </head>
 
 <body>
+    <div class="language-selector">
+        <select id="languageSelect" aria-label="Select Language">
+            <option value="en">English</option>
+            <option value="ja">日本語</option>
+            <option value="zh-Hans">简体中文</option>
+            <option value="zh-Hant">繁體中文</option>
+            <option value="ko">한국어</option>
+            <option value="fr">Français</option>
+        </select>
+    </div>
+
     <div class="container">
-        <h1>Terms of Service</h1>
-        <p class="last-updated">Last Updated: February 1, 2026</p>
+        <h1 data-i18n="title">Terms of Service</h1>
+        <p class="last-updated" data-i18n="last_updated">Last Updated: February 1, 2026</p>
 
-        <p>Welcome to Sawari! These Terms of Service ("Terms") govern your use of the Sawari mobile application (the
-            "App") developed by Fred Fang ("we", "our", or "us"). By downloading, installing, or using the App, you
-            agree to be bound by these Terms.</p>
+        <p data-i18n="intro">Welcome to Sawari! These Terms of Service ("Terms") govern your use of the Sawari mobile
+            application (the "App") developed by Zijun Fang ("we", "our", or "us"). By downloading, installing, or using
+            the App, you agree to be bound by these Terms.</p>
 
-        <h2>1. Acceptance of Terms</h2>
-        <p>By accessing or using Sawari, you agree to comply with and be bound by these Terms and our Privacy Policy. If
-            you do not agree to these Terms, please do not use the App.</p>
+        <h2 data-i18n="s1_title">1. Acceptance of Terms</h2>
+        <p data-i18n="s1_desc">By accessing or using Sawari, you agree to comply with and be bound by these Terms and
+            our Privacy Policy. If you do not agree to these Terms, please do not use the App.</p>
 
-        <h2>2. License to Use</h2>
-        <p>We grant you a limited, non-exclusive, non-transferable, revocable license to use Sawari for personal,
-            non-commercial purposes in accordance with these Terms.</p>
+        <h2 data-i18n="s2_title">2. License to Use</h2>
+        <p data-i18n="s2_desc">We grant you a limited, non-exclusive, non-transferable, revocable license to use Sawari
+            for personal, non-commercial purposes in accordance with these Terms.</p>
 
-        <h3>You May:</h3>
+        <h3 data-i18n="you_may_title">You May:</h3>
         <ul>
-            <li>Use the App to tune your shamisen or other instruments</li>
-            <li>Access all features included in your subscription tier</li>
-            <li>Use the App on devices associated with your Apple ID</li>
+            <li data-i18n="may_tune">Use the App to tune your shamisen or other instruments</li>
+            <li data-i18n="may_access">Access all features included in your subscription tier</li>
+            <li data-i18n="may_devices">Use the App on devices associated with your Apple ID</li>
         </ul>
 
-        <h3>You May Not:</h3>
+        <h3 data-i18n="you_may_not_title">You May Not:</h3>
         <ul>
-            <li>Modify, reverse engineer, or decompile the App</li>
-            <li>Remove or alter any copyright, trademark, or proprietary notices</li>
-            <li>Use the App for any illegal or unauthorized purpose</li>
-            <li>Attempt to gain unauthorized access to any portion of the App</li>
-            <li>Distribute or make the App available over a network where it could be used by multiple devices at the
-                same time</li>
+            <li data-i18n="not_modify">Modify, reverse engineer, or decompile the App</li>
+            <li data-i18n="not_remove">Remove or alter any copyright, trademark, or proprietary notices</li>
+            <li data-i18n="not_illegal">Use the App for any illegal or unauthorized purpose</li>
+            <li data-i18n="not_access">Attempt to gain unauthorized access to any portion of the App</li>
+            <li data-i18n="not_distribute">Distribute or make the App available over a network where it could be used by
+                multiple devices at the same time</li>
         </ul>
 
-        <h2>3. Microphone Access</h2>
+        <h2 data-i18n="s3_title">3. Microphone Access</h2>
         <div class="highlight">
-            <p>Sawari requires access to your device's microphone to provide pitch detection and tuning functionality.
-                By granting microphone access, you acknowledge that:</p>
+            <p data-i18n="s3_intro">Sawari requires access to your device's microphone to provide pitch detection and
+                tuning functionality. By granting microphone access, you acknowledge that:</p>
             <ul>
-                <li>Audio is processed in real-time on your device only</li>
-                <li>No audio data is recorded, stored, or transmitted</li>
-                <li>You may revoke microphone access at any time through device settings, though this will disable the
-                    tuning feature</li>
+                <li data-i18n="s3_realtime">Audio is processed in real-time on your device only</li>
+                <li data-i18n="s3_no_rec">No audio data is recorded, stored, or transmitted</li>
+                <li data-i18n="s3_revoke">You may revoke microphone access at any time through device settings, though
+                    this will disable the tuning feature</li>
             </ul>
         </div>
 
-        <h2>4. In-App Purchases and Subscriptions</h2>
+        <h2 data-i18n="s4_title">4. In-App Purchases and Subscriptions</h2>
 
-        <h3>Purchase Terms</h3>
-        <p>Sawari offers in-app purchases to unlock premium features. All purchases are processed through the Apple App
-            Store and are subject to Apple's Terms of Service.</p>
+        <h3 data-i18n="purchase_terms_title">Purchase Terms</h3>
+        <p data-i18n="purchase_terms_desc">Sawari offers in-app purchases to unlock premium features. All purchases are
+            processed through the Apple App Store and are subject to Apple's Terms of Service.</p>
 
-        <h3>Subscriptions</h3>
+        <h3 data-i18n="subscriptions_title">Subscriptions</h3>
         <ul>
-            <li><strong>Auto-Renewal:</strong> Subscriptions automatically renew unless cancelled at least 24 hours
-                before the end of the current period</li>
-            <li><strong>Cancellation:</strong> You can cancel subscriptions at any time through your Apple ID account
-                settings</li>
-            <li><strong>Refunds:</strong> Refund requests are handled by Apple according to their refund policy</li>
-            <li><strong>Price Changes:</strong> We reserve the right to modify subscription prices with advance notice
+            <li><strong data-i18n="sub_auto_title">Auto-Renewal:</strong> <span data-i18n="sub_auto_desc">Subscriptions
+                    automatically renew unless cancelled at least 24 hours before the end of the current period</span>
             </li>
+            <li><strong data-i18n="sub_cancel_title">Cancellation:</strong> <span data-i18n="sub_cancel_desc">You can
+                    cancel subscriptions at any time through your Apple ID account settings</span></li>
+            <li><strong data-i18n="sub_refund_title">Refunds:</strong> <span data-i18n="sub_refund_desc">Refund requests
+                    are handled by Apple according to their refund policy</span></li>
+            <li><strong data-i18n="sub_price_title">Price Changes:</strong> <span data-i18n="sub_price_desc">We reserve
+                    the right to modify subscription prices with advance notice</span></li>
         </ul>
 
-        <h3>Free Features</h3>
-        <p>The free version of Sawari may include advertisements and limited features. Premium subscriptions remove ads
-            and unlock additional tuning modes and features.</p>
+        <h3 data-i18n="free_features_title">Free Features</h3>
+        <p data-i18n="free_features_desc">The free version of Sawari may include advertisements and limited features.
+            Premium subscriptions remove ads and unlock additional tuning modes and features.</p>
 
-        <h2>5. Acceptable Use</h2>
-        <p>You agree to use Sawari only for lawful purposes. You are responsible for your use of the App and any
-            consequences thereof.</p>
+        <h2 data-i18n="s5_title">5. Acceptable Use</h2>
+        <p data-i18n="s5_desc">You agree to use Sawari only for lawful purposes. You are responsible for your use of the
+            App and any consequences thereof.</p>
 
-        <h2>6. Intellectual Property</h2>
-        <p>All content, features, and functionality of Sawari, including but not limited to text, graphics, logos,
-            software code, and algorithms, are owned by Fred Fang and are protected by international copyright,
-            trademark, and other intellectual property laws.</p>
+        <h2 data-i18n="s6_title">6. Intellectual Property</h2>
+        <p data-i18n="s6_desc">All content, features, and functionality of Sawari, including but not limited to text,
+            graphics, logos, software code, and algorithms, are owned by Zijun Fang and are protected by international
+            copyright, trademark, and other intellectual property laws.</p>
 
-        <h2>7. Disclaimer of Warranties</h2>
+        <h2 data-i18n="s7_title">7. Disclaimer of Warranties</h2>
         <div class="warning">
-            <p><strong>THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR
-                    IMPLIED.</strong></p>
-            <p>We do not guarantee that:</p>
+            <p><strong data-i18n="s7_warning">THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY
+                    KIND, EITHER EXPRESS OR IMPLIED.</strong></p>
+            <p data-i18n="s7_intro">We do not guarantee that:</p>
             <ul>
-                <li>The App will be error-free or uninterrupted</li>
-                <li>Defects will be corrected</li>
-                <li>The App is free of viruses or other harmful components</li>
-                <li>Results obtained from using the App will be accurate or reliable</li>
+                <li data-i18n="s7_error_free">The App will be error-free or uninterrupted</li>
+                <li data-i18n="s7_corrected">Defects will be corrected</li>
+                <li data-i18n="s7_virus">The App is free of viruses or other harmful components</li>
+                <li data-i18n="s7_accurate">Results obtained from using the App will be accurate or reliable</li>
             </ul>
         </div>
 
-        <h2>8. Limitation of Liability</h2>
-        <p>To the maximum extent permitted by law, Fred Fang shall not be liable for any indirect, incidental, special,
-            consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or
-            indirectly, or any loss of data, use, goodwill, or other intangible losses resulting from:</p>
+        <h2 data-i18n="s8_title">8. Limitation of Liability</h2>
+        <p data-i18n="s8_intro">To the maximum extent permitted by law, Zijun Fang shall not be liable for any indirect,
+            incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether
+            incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible losses resulting
+            from:</p>
         <ul>
-            <li>Your use or inability to use the App</li>
-            <li>Any unauthorized access to or use of our servers</li>
-            <li>Any bugs, viruses, or other harmful code transmitted through the App</li>
-            <li>Any errors or omissions in content</li>
+            <li data-i18n="s8_use">Your use or inability to use the App</li>
+            <li data-i18n="s8_access">Any unauthorized access to or use of our servers</li>
+            <li data-i18n="s8_virus">Any bugs, viruses, or other harmful code transmitted through the App</li>
+            <li data-i18n="s8_errors">Any errors or omissions in content</li>
         </ul>
 
-        <h2>9. Indemnification</h2>
-        <p>You agree to indemnify and hold harmless Fred Fang from any claims, damages, losses, liabilities, and
-            expenses (including legal fees) arising out of your use of the App or violation of these Terms.</p>
+        <h2 data-i18n="s9_title">9. Indemnification</h2>
+        <p data-i18n="s9_desc">You agree to indemnify and hold harmless Zijun Fang from any claims, damages, losses,
+            liabilities, and expenses (including legal fees) arising out of your use of the App or violation of these
+            Terms.</p>
 
-        <h2>10. Privacy</h2>
-        <p>Your use of Sawari is also governed by our Privacy Policy. Please review our <a href="privacy.html">Privacy
-                Policy</a> to understand our practices.</p>
+        <h2 data-i18n="s10_title">10. Privacy</h2>
+        <p><span data-i18n="s10_desc">Your use of Sawari is also governed by our Privacy Policy. Please review
+                our</span> <a href="privacy.html" data-i18n-link="privacy_link">Privacy Policy</a> <span
+                data-i18n="s10_desc2">to understand our practices.</span></p>
 
-        <h2>11. Termination</h2>
-        <p>We reserve the right to terminate or suspend your access to the App at any time, without notice, for conduct
-            that we believe violates these Terms or is harmful to other users, us, or third parties, or for any other
-            reason.</p>
+        <h2 data-i18n="s11_title">11. Termination</h2>
+        <p data-i18n="s11_desc">We reserve the right to terminate or suspend your access to the App at any time, without
+            notice, for conduct that we believe violates these Terms or is harmful to other users, us, or third parties,
+            or for any other reason.</p>
 
-        <h2>12. Changes to Terms</h2>
-        <p>We reserve the right to modify these Terms at any time. We will notify users of any material changes by
-            updating the "Last Updated" date. Your continued use of the App after changes constitutes acceptance of the
-            updated Terms.</p>
+        <h2 data-i18n="s12_title">12. Changes to Terms</h2>
+        <p data-i18n="s12_desc">We reserve the right to modify these Terms at any time. We will notify users of any
+            material changes by updating the "Last Updated" date. Your continued use of the App after changes
+            constitutes acceptance of the updated Terms.</p>
 
-        <h2>13. Governing Law</h2>
-        <p>These Terms shall be governed by and construed in accordance with the laws of your jurisdiction, without
-            regard to its conflict of law provisions.</p>
+        <h2 data-i18n="s13_title">13. Governing Law</h2>
+        <p data-i18n="s13_desc">These Terms shall be governed by and construed in accordance with the laws of your
+            jurisdiction, without regard to its conflict of law provisions.</p>
 
-        <h2>14. App Store Terms</h2>
-        <p>Your use of Sawari must comply with the App Store Terms of Service. In the event of conflict between these
-            Terms and the App Store Terms of Service, the App Store Terms of Service shall prevail.</p>
+        <h2 data-i18n="s14_title">14. App Store Terms</h2>
+        <p data-i18n="s14_desc">Your use of Sawari must comply with the App Store Terms of Service. In the event of
+            conflict between these Terms and the App Store Terms of Service, the App Store Terms of Service shall
+            prevail.</p>
 
-        <h2>15. Severability</h2>
-        <p>If any provision of these Terms is found to be unenforceable or invalid, that provision shall be limited or
-            eliminated to the minimum extent necessary so that these Terms shall otherwise remain in full force and
-            effect.</p>
+        <h2 data-i18n="s15_title">15. Severability</h2>
+        <p data-i18n="s15_desc">If any provision of these Terms is found to be unenforceable or invalid, that provision
+            shall be limited or eliminated to the minimum extent necessary so that these Terms shall otherwise remain in
+            full force and effect.</p>
 
-        <h2>16. Contact Information</h2>
-        <p>If you have any questions about these Terms, please contact us at:</p>
-        <p><strong>Email:</strong> <a href="mailto:sawari.tuner@gmail.com">sawari.tuner@gmail.com</a></p>
+        <h2 data-i18n="s16_title">16. Contact Information</h2>
+        <p data-i18n="s16_intro">If you have any questions about these Terms, please contact us at:</p>
+        <p><strong data-i18n="email_label">Email:</strong> <a
+                href="mailto:sawari.tuner@gmail.com">sawari.tuner@gmail.com</a></p>
 
         <div class="footer">
-            <p>&copy; 2026 Fred Fang. All rights reserved.</p>
-            <p>Sawari - Shamisen Tuning App</p>
-            <p><a href="privacy.html">Privacy Policy</a></p>
+            <p data-i18n="footer_copyright">&copy; 2026 Zijun Fang. All rights reserved.</p>
+            <p data-i18n="footer_app">Sawari - Shamisen Tuning App</p>
+            <p><a href="privacy.html" data-i18n-link="privacy_policy_link">Privacy Policy</a></p>
         </div>
     </div>
+
+    <script src="terms-i18n.js"></script>
 </body>
 
 </html>

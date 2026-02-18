@@ -216,7 +216,7 @@
 
     <div class="container">
         <h1 data-i18n="title">Privacy Policy</h1>
-        <p class="last-updated" data-i18n="last_updated">Last Updated: February 1, 2026</p>
+        <p class="last-updated" data-i18n="last_updated">Last Updated: February 18, 2026</p>
 
         <p data-i18n="intro">Zijun Fang ("we", "our", or "us") respects your privacy. This Privacy Policy explains how
             we
@@ -227,27 +227,55 @@
 
         <h3 data-i18n="mic_access_title">Microphone Access</h3>
         <p data-i18n="mic_access_desc">Sawari requires access to your device's microphone to detect the pitch of your
-            shamisen for tuning purposes.
-        </p>
+            shamisen for tuning purposes.</p>
 
         <div class="highlight">
             <ul>
                 <li><strong data-i18n="realtime_title">Real-time Processing:</strong> <span
-                        data-i18n="realtime_desc">The App processes audio in real-time to calculate frequency
-                        for accurate tuning.</span></li>
+                        data-i18n="realtime_desc">The App processes audio in real-time to calculate frequency for
+                        accurate tuning.</span></li>
                 <li><strong data-i18n="no_recording_title">No Recording:</strong> <span data-i18n="no_recording_desc">We
-                        do not record, store, or transmit any audio data
-                        or conversations.</span></li>
+                        do not record, store, or transmit any audio data or conversations.</span></li>
                 <li><strong data-i18n="no_personal_title">No Personal Data:</strong> <span
                         data-i18n="no_personal_desc">The audio signal is used solely for pitch detection and is
                         discarded immediately after processing.</span></li>
             </ul>
         </div>
 
-        <h3 data-i18n="no_collection_title">No Collection of Personal Information</h3>
-        <p data-i18n="no_collection_desc">We do not collect, track, or share any personally identifiable information
-            (PII), such as your name, email
-            address, location, or device identifiers.</p>
+        <h3 data-i18n="att_title">App Tracking Transparency (ATT)</h3>
+        <p data-i18n="att_desc">On first launch, Sawari will ask for your permission to track your activity across apps
+            and websites via Apple's App Tracking Transparency framework. Your choice controls how ads are served:</p>
+        <ul>
+            <li><strong data-i18n="att_allow_title">If you allow:</strong> <span data-i18n="att_allow_desc">AdMob uses
+                    your Advertising Identifier (IDFA) to serve personalized ads.</span></li>
+            <li><strong data-i18n="att_deny_title">If you deny:</strong> <span data-i18n="att_deny_desc">AdMob serves
+                    non-personalized ads only. Your IDFA is not used.</span></li>
+        </ul>
+        <p data-i18n="att_change">You can change this preference at any time in Settings &gt; Privacy &amp; Security
+            &gt; Tracking.</p>
+
+        <h3 data-i18n="admob_title">Data Collected via AdMob (Google)</h3>
+        <p data-i18n="admob_desc">The free version of the App uses Google AdMob to display advertisements. AdMob
+            collects the following data, which may be linked to your identity and used for tracking:</p>
+        <ul>
+            <li><strong data-i18n="admob_location_title">Coarse Location:</strong> <span
+                    data-i18n="admob_location_desc">Approximate location inferred from your IP address, used to serve
+                    geographically relevant ads.</span></li>
+            <li><strong data-i18n="admob_deviceid_title">Device ID / IDFA:</strong> <span
+                    data-i18n="admob_deviceid_desc">Used for ad targeting, frequency capping, and fraud
+                    prevention.</span></li>
+            <li><strong data-i18n="admob_usage_title">Product Interaction:</strong> <span
+                    data-i18n="admob_usage_desc">App launches, taps, and in-app events to measure ad performance.</span>
+            </li>
+            <li><strong data-i18n="admob_addata_title">Advertising Data:</strong> <span
+                    data-i18n="admob_addata_desc">Records of which ads were shown and interacted with to optimize future
+                    ad delivery.</span></li>
+            <li><strong data-i18n="admob_perf_title">Performance Data:</strong> <span data-i18n="admob_perf_desc">App
+                    launch time, hang rate, and energy usage to evaluate ad load performance. Not used for
+                    tracking.</span></li>
+            <li><strong data-i18n="admob_crash_title">Crash Data:</strong> <span data-i18n="admob_crash_desc">SDK-level
+                    crash reports to diagnose issues. Not linked to your identity.</span></li>
+        </ul>
 
         <h2 data-i18n="section_2_title">2. In-App Purchases</h2>
         <p data-i18n="section_2_desc">Sawari offers in-app purchases to unlock premium features. All purchase
@@ -257,44 +285,44 @@
 
         <h2 data-i18n="section_3_title">3. Third-Party Services</h2>
 
-        <h3 data-i18n="advertising_title">Advertising</h3>
-        <p data-i18n="advertising_desc">The free version of the App may display advertisements. These ads are served by
-            third-party advertising
-            partners who may collect certain device information to provide relevant advertisements. This may include:
-        </p>
+        <h3 data-i18n="advertising_title">Advertising (Google AdMob)</h3>
+        <p data-i18n="advertising_desc">The free version of the App displays advertisements via Google AdMob. AdMob may
+            collect and use the following data for advertising and analytics purposes:</p>
         <ul>
-            <li data-i18n="ad_device">Device type and operating system</li>
-            <li data-i18n="ad_idfa">Advertising identifier (IDFA)</li>
-            <li data-i18n="ad_ip">IP address</li>
-            <li data-i18n="ad_interaction">Ad interaction data</li>
+            <li data-i18n="ad_location">Coarse location (inferred from IP address)</li>
+            <li data-i18n="ad_idfa">Advertising identifier (IDFA) or device ID</li>
+            <li data-i18n="ad_interaction">Ad interaction and product usage data</li>
+            <li data-i18n="ad_perf">App performance and diagnostics data</li>
         </ul>
-        <p data-i18n="advertising_optout">You can opt out of personalized advertising through your device settings.
-            Please refer to your advertising
-            partners' privacy policies for more information.</p>
+        <p data-i18n="advertising_optout">You can opt out of personalized advertising by denying the ATT prompt on first
+            launch, or by going to Settings &gt; Privacy &amp; Security &gt; Tracking at any time. For more information,
+            see <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</p>
 
         <h3 data-i18n="analytics_title">Analytics</h3>
-        <p data-i18n="analytics_desc">We may use analytics services to understand app usage and improve user experience.
-            These services may collect
-            anonymized usage data such as app crashes, feature usage, and session duration. No personally identifiable
-            information is collected.</p>
+        <p data-i18n="analytics_desc">AdMob also collects anonymized diagnostics data including crash reports and
+            performance metrics to improve ad delivery. Crash data is not linked to your identity.</p>
 
         <h2 data-i18n="section_4_title">4. Data Security</h2>
-        <p data-i18n="section_4_desc">We are committed to protecting your information. Since we do not collect or store
-            personal data on our
-            servers, there is minimal risk of data breach related to personal information.</p>
+        <p data-i18n="section_4_desc">We are committed to protecting your information. We do not operate our own servers
+            that store personal data. Data collected by AdMob is governed by Google's security practices. Purchase
+            transactions are handled entirely within Apple's ecosystem and are never shared with us or any third party.
+        </p>
 
         <h2 data-i18n="section_5_title">5. Children's Privacy</h2>
-        <p data-i18n="section_5_desc">Sawari does not knowingly collect any information from children under the age of
-            13. Since no personal data
-            is collected, the App is safe for all ages.</p>
+        <p data-i18n="section_5_desc">Sawari is not directed at children under the age of 13. We do not knowingly
+            collect personal information from children. The App uses AdMob for advertising, which applies its own data
+            collection practices to all users. If you believe a child has provided personal information, please contact
+            us so we can take appropriate action.</p>
 
         <h2 data-i18n="section_6_title">6. Your Rights</h2>
         <p data-i18n="section_6_intro">You have the right to:</p>
         <ul>
             <li data-i18n="right_mic">Deny microphone access (though this will prevent the tuning feature from working)
             </li>
-            <li data-i18n="right_optout">Opt out of personalized advertising through device settings</li>
-            <li data-i18n="right_delete">Delete the app and all associated data at any time</li>
+            <li data-i18n="right_att">Deny or revoke App Tracking Transparency permission at any time via Settings &gt;
+                Privacy &amp; Security &gt; Tracking</li>
+            <li data-i18n="right_optout">Opt out of personalized advertising through your device settings</li>
+            <li data-i18n="right_delete">Delete the app and all associated local data at any time</li>
         </ul>
 
         <h2 data-i18n="section_7_title">7. International Users</h2>
@@ -324,7 +352,7 @@
             en: {
                 page_title: "Privacy Policy - Sawari",
                 title: "Privacy Policy",
-                last_updated: "Last Updated: February 1, 2026",
+                last_updated: "Last Updated: February 18, 2026",
                 intro: 'Zijun Fang ("we", "our", or "us") respects your privacy. This Privacy Policy explains how we handle information in the Sawari application (the "App").',
                 section_1_title: "1. Information We Collect",
                 mic_access_title: "Microphone Access",
@@ -335,29 +363,49 @@
                 no_recording_desc: "We do not record, store, or transmit any audio data or conversations.",
                 no_personal_title: "No Personal Data:",
                 no_personal_desc: "The audio signal is used solely for pitch detection and is discarded immediately after processing.",
-                no_collection_title: "No Collection of Personal Information",
-                no_collection_desc: "We do not collect, track, or share any personally identifiable information (PII), such as your name, email address, location, or device identifiers.",
+                att_title: "App Tracking Transparency (ATT)",
+                att_desc: "On first launch, Sawari will ask for your permission to track your activity across apps and websites via Apple's App Tracking Transparency framework. Your choice controls how ads are served:",
+                att_allow_title: "If you allow:",
+                att_allow_desc: "AdMob uses your Advertising Identifier (IDFA) to serve personalized ads.",
+                att_deny_title: "If you deny:",
+                att_deny_desc: "AdMob serves non-personalized ads only. Your IDFA is not used.",
+                att_change: "You can change this preference at any time in Settings > Privacy & Security > Tracking.",
+                admob_title: "Data Collected via AdMob (Google)",
+                admob_desc: "The free version of the App uses Google AdMob to display advertisements. AdMob collects the following data, which may be linked to your identity and used for tracking:",
+                admob_location_title: "Coarse Location:",
+                admob_location_desc: "Approximate location inferred from your IP address, used to serve geographically relevant ads.",
+                admob_deviceid_title: "Device ID / IDFA:",
+                admob_deviceid_desc: "Used for ad targeting, frequency capping, and fraud prevention.",
+                admob_usage_title: "Product Interaction:",
+                admob_usage_desc: "App launches, taps, and in-app events to measure ad performance.",
+                admob_addata_title: "Advertising Data:",
+                admob_addata_desc: "Records of which ads were shown and interacted with to optimize future ad delivery.",
+                admob_perf_title: "Performance Data:",
+                admob_perf_desc: "App launch time, hang rate, and energy usage to evaluate ad load performance. Not used for tracking.",
+                admob_crash_title: "Crash Data:",
+                admob_crash_desc: "SDK-level crash reports to diagnose issues. Not linked to your identity.",
                 section_2_title: "2. In-App Purchases",
-                section_2_desc: "Sawari offers in-app purchases to unlock premium features. All purchase transactions are processed securely through Apple's App Store. We do not have access to your payment information. Apple's privacy policy governs the collection and use of payment-related data.",
+                section_2_desc: "Sawari offers in-app purchases to unlock premium features. All purchase transactions are processed securely through Apple's App Store. We do not have access to your payment information. Purchase data stays entirely within Apple's ecosystem and is never shared with us or any third party.",
                 section_3_title: "3. Third-Party Services",
-                advertising_title: "Advertising",
-                advertising_desc: "The free version of the App may display advertisements. These ads are served by third-party advertising partners who may collect certain device information to provide relevant advertisements. This may include:",
-                ad_device: "Device type and operating system",
-                ad_idfa: "Advertising identifier (IDFA)",
-                ad_ip: "IP address",
-                ad_interaction: "Ad interaction data",
-                advertising_optout: "You can opt out of personalized advertising through your device settings. Please refer to your advertising partners' privacy policies for more information.",
+                advertising_title: "Advertising (Google AdMob)",
+                advertising_desc: "The free version of the App displays advertisements via Google AdMob. AdMob may collect and use the following data for advertising and analytics purposes:",
+                ad_location: "Coarse location (inferred from IP address)",
+                ad_idfa: "Advertising identifier (IDFA) or device ID",
+                ad_interaction: "Ad interaction and product usage data",
+                ad_perf: "App performance and diagnostics data",
+                advertising_optout: "You can opt out of personalized advertising by denying the ATT prompt on first launch, or by going to Settings > Privacy & Security > Tracking at any time.",
                 analytics_title: "Analytics",
-                analytics_desc: "We may use analytics services to understand app usage and improve user experience. These services may collect anonymized usage data such as app crashes, feature usage, and session duration. No personally identifiable information is collected.",
+                analytics_desc: "AdMob also collects anonymized diagnostics data including crash reports and performance metrics to improve ad delivery. Crash data is not linked to your identity.",
                 section_4_title: "4. Data Security",
-                section_4_desc: "We are committed to protecting your information. Since we do not collect or store personal data on our servers, there is minimal risk of data breach related to personal information.",
+                section_4_desc: "We are committed to protecting your information. We do not operate our own servers that store personal data. Data collected by AdMob is governed by Google's security practices. Purchase transactions are handled entirely within Apple's ecosystem and are never shared with us or any third party.",
                 section_5_title: "5. Children's Privacy",
-                section_5_desc: "Sawari does not knowingly collect any information from children under the age of 13. Since no personal data is collected, the App is safe for all ages.",
+                section_5_desc: "Sawari is not directed at children under the age of 13. We do not knowingly collect personal information from children. The App uses AdMob for advertising, which applies its own data collection practices to all users. If you believe a child has provided personal information, please contact us.",
                 section_6_title: "6. Your Rights",
                 section_6_intro: "You have the right to:",
                 right_mic: "Deny microphone access (though this will prevent the tuning feature from working)",
-                right_optout: "Opt out of personalized advertising through device settings",
-                right_delete: "Delete the app and all associated data at any time",
+                right_att: "Deny or revoke App Tracking Transparency permission at any time via Settings > Privacy & Security > Tracking",
+                right_optout: "Opt out of personalized advertising through your device settings",
+                right_delete: "Delete the app and all associated local data at any time",
                 section_7_title: "7. International Users",
                 section_7_desc: "Sawari is available globally. If you use the App outside your country of residence, please note that your information may be transferred to and processed in countries where our service providers operate.",
                 section_8_title: "8. Changes to This Policy",
@@ -371,7 +419,7 @@
             ja: {
                 page_title: "プライバシーポリシー - Sawari",
                 title: "プライバシーポリシー",
-                last_updated: "最終更新日：2026年2月1日",
+                last_updated: "最終更新日：2026年2月18日",
                 intro: 'Zijun Fang（「当社」）はお客様のプライバシーを尊重します。本プライバシーポリシーは、Sawariアプリケーション（以下「本アプリ」）における情報の取り扱いについて説明します。',
                 section_1_title: "1. 収集する情報",
                 mic_access_title: "マイクへのアクセス",
@@ -382,29 +430,49 @@
                 no_recording_desc: "音声データや会話の録音、保存、送信は一切行いません。",
                 no_personal_title: "個人データなし：",
                 no_personal_desc: "音声信号は音程検出のためにのみ使用され、処理後すぐに破棄されます。",
-                no_collection_title: "個人情報の収集なし",
-                no_collection_desc: "お客様の名前、メールアドレス、位置情報、デバイス識別子などの個人を特定できる情報（PII）の収集、追跡、共有は一切行いません。",
+                att_title: "アプリトラッキングの透明性（ATT）",
+                att_desc: "初回起動時に、AppleのApp Tracking Transparencyフレームワークを通じて、アプリやウェブサイトをまたいだ追跡の許可を求めます。お客様の選択により広告の配信方法が変わります：",
+                att_allow_title: "許可した場合：",
+                att_allow_desc: "AdMobが広告識別子（IDFA）を使用してパーソナライズド広告を配信します。",
+                att_deny_title: "拒否した場合：",
+                att_deny_desc: "AdMobは非パーソナライズド広告のみを配信します。IDFAは使用されません。",
+                att_change: "この設定はいつでも「設定」→「プライバシーとセキュリティ」→「トラッキング」から変更できます。",
+                admob_title: "AdMob（Google）による収集データ",
+                admob_desc: "本アプリの無料版はGoogle AdMobを使用して広告を表示します。AdMobは以下のデータを収集する場合があり、お客様の識別情報に紐付けられ、追跡に使用される可能性があります：",
+                admob_location_title: "おおよその位置情報：",
+                admob_location_desc: "IPアドレスから推定される大まかな位置情報。地域に関連した広告の配信に使用されます。",
+                admob_deviceid_title: "デバイスID / IDFA：",
+                admob_deviceid_desc: "広告ターゲティング、フリークエンシーキャップ、不正防止に使用されます。",
+                admob_usage_title: "製品インタラクション：",
+                admob_usage_desc: "アプリの起動、タップ、アプリ内イベントなど、広告パフォーマンスの測定に使用されます。",
+                admob_addata_title: "広告データ：",
+                admob_addata_desc: "表示・操作された広告の記録。将来の広告配信の最適化に使用されます。",
+                admob_perf_title: "パフォーマンスデータ：",
+                admob_perf_desc: "アプリの起動時間、ハング率、エネルギー使用量。広告読み込みパフォーマンスの評価に使用されます。追跡には使用されません。",
+                admob_crash_title: "クラッシュデータ：",
+                admob_crash_desc: "SDKレベルのクラッシュレポート。問題の診断に使用されます。お客様の識別情報には紐付けられません。",
                 section_2_title: "2. アプリ内課金",
-                section_2_desc: "Sawariは、プレミアム機能のロックを解除するためのアプリ内課金を提供しています。すべての購入取引はApple App Storeを通じて安全に処理されます。当社はお客様の支払い情報にアクセスできません。支払い関連データの収集と使用は、Appleのプライバシーポリシーに準拠します。",
+                section_2_desc: "Sawariは、プレミアム機能のロックを解除するためのアプリ内課金を提供しています。すべての購入取引はApple App Storeを通じて安全に処理されます。当社はお客様の支払い情報にアクセスできません。購入データはAppleのエコシステム内に留まり、当社や第三者と共有されることはありません。",
                 section_3_title: "3. サードパーティサービス",
-                advertising_title: "広告",
-                advertising_desc: "本アプリの無料版には広告が表示される場合があります。これらの広告は、関連性の高い広告を提供するために特定のデバイス情報を収集する可能性のあるサードパーティの広告パートナーによって配信されます。これには以下が含まれる場合があります：",
-                ad_device: "デバイスの種類とオペレーティングシステム",
-                ad_idfa: "広告識別子（IDFA）",
-                ad_ip: "IPアドレス",
-                ad_interaction: "広告インタラクションデータ",
-                advertising_optout: "デバイスの設定からパーソナライズド広告をオプトアウトできます。詳細については、広告パートナーのプライバシーポリシーをご参照ください。",
+                advertising_title: "広告（Google AdMob）",
+                advertising_desc: "本アプリの無料版はGoogle AdMobを通じて広告を表示します。AdMobは広告・分析目的で以下のデータを収集・使用する場合があります：",
+                ad_location: "おおよその位置情報（IPアドレスから推定）",
+                ad_idfa: "広告識別子（IDFA）またはデバイスID",
+                ad_interaction: "広告インタラクションおよび製品使用データ",
+                ad_perf: "アプリのパフォーマンスおよび診断データ",
+                advertising_optout: "初回起動時のATTプロンプトで拒否するか、「設定」→「プライバシーとセキュリティ」→「トラッキング」からいつでもパーソナライズド広告をオプトアウトできます。",
                 analytics_title: "アナリティクス",
-                analytics_desc: "当社は、アプリの使用状況を理解し、ユーザーエクスペリエンスを向上させるために、アナリティクスサービスを使用する場合があります。これらのサービスは、アプリのクラッシュ、機能の使用状況、セッション時間などの匿名化された使用データを収集する場合があります。個人を特定できる情報は収集されません。",
+                analytics_desc: "AdMobはクラッシュレポートやパフォーマンス指標などの匿名化された診断データも収集し、広告配信の改善に使用します。クラッシュデータはお客様の識別情報に紐付けられません。",
                 section_4_title: "4. データセキュリティ",
-                section_4_desc: "当社はお客様の情報を保護することに取り組んでいます。当社のサーバー上で個人データを収集または保存しないため、個人情報に関連するデータ侵害のリスクは最小限です。",
+                section_4_desc: "当社はお客様の情報を保護することに取り組んでいます。当社は個人データを保存する独自のサーバーを運営していません。AdMobが収集するデータはGoogleのセキュリティ基準に従って管理されます。購入取引はAppleのエコシステム内で完結し、当社や第三者と共有されることはありません。",
                 section_5_title: "5. 子供のプライバシー",
-                section_5_desc: "Sawariは13歳未満の子供から故意に情報を収集することはありません。個人データは収集されないため、本アプリはすべての年齢層に安全です。",
+                section_5_desc: "Sawariは13歳未満の子供を対象としていません。当社は子供から故意に個人情報を収集することはありません。本アプリはAdMobを使用しており、AdMobは全ユーザーに対して独自のデータ収集を行います。お子様が個人情報を提供したと思われる場合は、ご連絡ください。",
                 section_6_title: "6. お客様の権利",
                 section_6_intro: "お客様には以下の権利があります：",
                 right_mic: "マイクへのアクセスを拒否する（ただし、チューニング機能が使用できなくなります）",
+                right_att: "「設定」→「プライバシーとセキュリティ」→「トラッキング」からいつでもATT許可を拒否または取り消す",
                 right_optout: "デバイスの設定からパーソナライズド広告をオプトアウトする",
-                right_delete: "いつでもアプリと関連するすべてのデータを削除する",
+                right_delete: "いつでもアプリとすべてのローカルデータを削除する",
                 section_7_title: "7. 国際ユーザー",
                 section_7_desc: "Sawariは世界中で利用可能です。お住まいの国以外で本アプリを使用する場合、お客様の情報は当社のサービスプロバイダーが運営する国に転送され、処理される可能性があることにご留意ください。",
                 section_8_title: "8. 本ポリシーの変更",
@@ -418,8 +486,8 @@
             "zh-Hans": {
                 page_title: "隐私政策 - Sawari",
                 title: "隐私政策",
-                last_updated: "最后更新日期：2026年2月1日",
-                intro: 'Zijun Fang（"我们"）尊重您的隐私。本隐私政策说明我们如何在Sawari应用程序（以下简称"本应用"）中处理信息。',
+                last_updated: "最后更新日期：2026年2月18日",
+                intro: 'Zijun Fang（"我们"）尊重您的隐私。本隐私政策说明我们如何在Sawari应用程序（以下简称“本应用”）中处理信息。',
                 section_1_title: "1. 我们收集的信息",
                 mic_access_title: "麦克风访问",
                 mic_access_desc: "Sawari需要访问您设备的麦克风以检测三味线的音高进行调音。",
@@ -429,33 +497,53 @@
                 no_recording_desc: "我们不会录制、存储或传输任何音频数据或对话。",
                 no_personal_title: "无个人数据：",
                 no_personal_desc: "音频信号仅用于音高检测，并在处理后立即丢弃。",
-                no_collection_title: "不收集个人信息",
-                no_collection_desc: "我们不会收集、跟踪或共享任何可识别个人身份的信息（PII），例如您的姓名、电子邮件地址、位置或设备标识符。",
+                att_title: "应用跟踪透明度（ATT）",
+                att_desc: "首次启动时，Sawari将通过Apple的App Tracking Transparency框架请求您允许跨应用和网站追踪您的活动。您的选择决定广告的投放方式：",
+                att_allow_title: "如果您允许：",
+                att_allow_desc: "AdMob将使用您的广告标识符（IDFA）投放个性化广告。",
+                att_deny_title: "如果您拒绝：",
+                att_deny_desc: "AdMob仅投放非个性化广告。您的IDFA不会被使用。",
+                att_change: "您可以随时在「设置」→「隐私与安全」→「跟踪」中更改此首选项。",
+                admob_title: "通过AdMob（Google）收集的数据",
+                admob_desc: "本应用的免费版使用Google AdMob显示广告。AdMob可能收集以下数据，这些数据可能与您的身份相关联并用于跟踪：",
+                admob_location_title: "粗略位置：",
+                admob_location_desc: "通过您的IP地址推断的大致位置，用于投放地理相关广告。",
+                admob_deviceid_title: "设备ID / IDFA：",
+                admob_deviceid_desc: "用于广告定向、频率上限和防欺诈。",
+                admob_usage_title: "产品交互：",
+                admob_usage_desc: "应用启动、点击和应用内事件，用于衡量广告效果。",
+                admob_addata_title: "广告数据：",
+                admob_addata_desc: "展示和互动广告的记录，用于优化未来广告投放。",
+                admob_perf_title: "性能数据：",
+                admob_perf_desc: "应用启动时间、卡顿率和能耗，用于评估广告加载性能。不用于跟踪。",
+                admob_crash_title: "崩溃数据：",
+                admob_crash_desc: "SDK级崩溃报告，用于诊断问题。不与您的身份相关联。",
                 section_2_title: "2. 应用内购买",
-                section_2_desc: "Sawari提供应用内购买以解锁高级功能。所有购买交易均通过Apple App Store安全处理。我们无法访问您的支付信息。Apple的隐私政策管理支付相关数据的收集和使用。",
+                section_2_desc: "Sawari提供应用内购买以解锁高级功能。所有购买交易均通过Apple App Store安全处理。我们无法访问您的支付信息。购买数据完全留在Apple生态系统内，不会与我们或任何第三方共享。",
                 section_3_title: "3. 第三方服务",
-                advertising_title: "广告",
-                advertising_desc: "本应用的免费版本可能会显示广告。这些广告由第三方广告合作伙伴提供，他们可能会收集某些设备信息以提供相关广告。这可能包括：",
-                ad_device: "设备类型和操作系统",
-                ad_idfa: "广告标识符（IDFA）",
-                ad_ip: "IP地址",
-                ad_interaction: "广告互动数据",
-                advertising_optout: "您可以通过设备设置选择退出个性化广告。有关更多信息，请参阅您的广告合作伙伴的隐私政策。",
+                advertising_title: "广告（Google AdMob）",
+                advertising_desc: "本应用的免费版通过Google AdMob显示广告。AdMob可能收集并使用以下数据用于广告和分析目的：",
+                ad_location: "粗略位置（通过IP地址推断）",
+                ad_idfa: "广告标识符（IDFA）或设备ID",
+                ad_interaction: "广告交互和产品使用数据",
+                ad_perf: "应用性能和诊断数据",
+                advertising_optout: "您可以在首次启动时拒绝 ATT 提示，或随时在「设置」→「隐私与安全」→「跟踪」中退出个性化广告。",
                 analytics_title: "分析",
-                analytics_desc: "我们可能会使用分析服务来了解应用使用情况并改善用户体验。这些服务可能会收集匿名化的使用数据，例如应用崩溃、功能使用和会话时长。不会收集个人身份信息。",
+                analytics_desc: "AdMob还收集包括崩溃报告和性能指标在内的匿名诊断数据，用于改善广告投放。崩溃数据不与您的身份相关联。",
                 section_4_title: "4. 数据安全",
-                section_4_desc: "我们致力于保护您的信息。由于我们不在服务器上收集或存储个人数据，因此与个人信息相关的数据泄露风险极小。",
+                section_4_desc: "我们致力于保护您的信息。我们不运营存储个人数据的自有服务器。AdMob收集的数据由Google的安全实践管理。购买交易完全在Apple生态系统内完成，不会与我们或任何第三方共享。",
                 section_5_title: "5. 儿童隐私",
-                section_5_desc: "Sawari不会故意收集13岁以下儿童的任何信息。由于不收集个人数据，本应用对所有年龄段都是安全的。",
+                section_5_desc: "Sawari不针对儿童13岁以下的用户。我们不会故意收集儿童的个人信息。本应用使用AdMob进行广告，AdMob对所有用户应用其自己的数据收集实践。如果您认为儿童提供了个人信息，请联系我们。",
                 section_6_title: "6. 您的权利",
                 section_6_intro: "您有权：",
-                right_mic: "拒绝麦克风访问（尽管这将阻止调音功能工作）",
+                right_mic: "拒绝麦克风访问（但这将防止调音功能工作）",
+                right_att: "随时在「设置」→「隐私与安全」→「跟踪」中拒绝或撤销ATT权限",
                 right_optout: "通过设备设置退出个性化广告",
-                right_delete: "随时删除应用及所有相关数据",
+                right_delete: "随时删除应用及所有本地数据",
                 section_7_title: "7. 国际用户",
                 section_7_desc: "Sawari在全球范围内可用。如果您在居住国以外使用本应用，请注意您的信息可能会被传输到我们的服务提供商运营的国家并在那里处理。",
                 section_8_title: "8. 本政策的变更",
-                section_8_desc: "我们可能会不时更新我们的隐私政策。我们将通过更新本政策顶部的\\\"最后更新日期\\\"来通知您任何更改。在更改后继续使用本应用即表示接受更新后的政策。",
+                section_8_desc: "我们可能不时更新我们的隐私政策。我们将通过更新本政策顶部的“最后更新日期”来通知您任何更改。更改后继续使用本应用即表示接受更新后的政策。",
                 section_9_title: "9. 联系我们",
                 section_9_intro: "如果您对本隐私政策有任何疑问，请通过以下方式联系我们：",
                 email_label: "电子邮件：",
@@ -465,7 +553,7 @@
             "zh-Hant": {
                 page_title: "隱私政策 - Sawari",
                 title: "隱私政策",
-                last_updated: "最後更新日期：2026年2月1日",
+                last_updated: "最後更新日期：2026年2月18日",
                 intro: 'Zijun Fang（「我們」）尊重您的隱私。本隱私政策說明我們如何在Sawari應用程式（以下簡稱「本應用程式」）中處理資訊。',
                 section_1_title: "1. 我們收集的資訊",
                 mic_access_title: "麥克風存取",
@@ -476,33 +564,53 @@
                 no_recording_desc: "我們不會錄製、儲存或傳輸任何音訊資料或對話。",
                 no_personal_title: "無個人資料：",
                 no_personal_desc: "音訊訊號僅用於音高檢測，並在處理後立即丟棄。",
-                no_collection_title: "不收集個人資訊",
-                no_collection_desc: "我們不會收集、追蹤或分享任何可識別個人身分的資訊（PII），例如您的姓名、電子郵件地址、位置或裝置識別符。",
+                att_title: "應用程式追蹤透明度（ATT）",
+                att_desc: "首次啟動時，Sawari將透過Apple的App Tracking Transparency框架請求您允許跨應用和網站追蹤您的活動。您的選擇決定廣告的投放方式：",
+                att_allow_title: "如果您允許：",
+                att_allow_desc: "AdMob將使用您的廣告標識符（IDFA）投放個人化廣告。",
+                att_deny_title: "如果您拒絕：",
+                att_deny_desc: "AdMob僅投放非個人化廣告。您的IDFA不會被使用。",
+                att_change: "您可以隨時在「設定」→「隱私與安全」→「追蹤」中更改此首選項。",
+                admob_title: "透過AdMob（Google）收集的資料",
+                admob_desc: "本應用程式的免費版使用Google AdMob顯示廣告。AdMob可能收集以下資料，這些資料可能與您的身份相關聯並用於追蹤：",
+                admob_location_title: "粗略位置：",
+                admob_location_desc: "透過您的IP位址推斷的大致位置，用於投放地理相關廣告。",
+                admob_deviceid_title: "裝置ID / IDFA：",
+                admob_deviceid_desc: "用於廣告定向、頻率上限和防欺詐。",
+                admob_usage_title: "產品互動：",
+                admob_usage_desc: "應用程式啟動、點擊和應用程式內事件，用於衡量廣告效果。",
+                admob_addata_title: "廣告資料：",
+                admob_addata_desc: "顯示和互動廣告的記錄，用於導優未來廣告投放。",
+                admob_perf_title: "效能資料：",
+                admob_perf_desc: "應用程式啟動時間、卡頓率和能耗，用於評估廣告載入效能。不用於追蹤。",
+                admob_crash_title: "當機資料：",
+                admob_crash_desc: "SDK級當機報告，用於診斷問題。不與您的身份相關聯。",
                 section_2_title: "2. 應用程式內購買",
-                section_2_desc: "Sawari提供應用程式內購買以解鎖進階功能。所有購買交易均透過Apple App Store安全處理。我們無法存取您的付款資訊。Apple的隱私政策管理付款相關資料的收集和使用。",
+                section_2_desc: "Sawari提供應用程式內購買以解鎖進階功能。所有購買交易均透過Apple App Store安全處理。我們無法存取您的付款資訊。購買資料完全留在Apple生態系統內，不會與我們或任何第三方共享。",
                 section_3_title: "3. 第三方服務",
-                advertising_title: "廣告",
-                advertising_desc: "本應用程式的免費版本可能會顯示廣告。這些廣告由第三方廣告合作夥伴提供，他們可能會收集某些裝置資訊以提供相關廣告。這可能包括：",
-                ad_device: "裝置類型和作業系統",
-                ad_idfa: "廣告識別碼（IDFA）",
-                ad_ip: "IP位址",
-                ad_interaction: "廣告互動資料",
-                advertising_optout: "您可以透過裝置設定選擇退出個人化廣告。有關更多資訊，請參閱您的廣告合作夥伴的隱私政策。",
+                advertising_title: "廣告（Google AdMob）",
+                advertising_desc: "本應用程式的免費版透過Google AdMob顯示廣告。AdMob可能收集並使用以下資料用於廣告和分析目的：",
+                ad_location: "粗略位置（透過IP位址推斷）",
+                ad_idfa: "廣告標識符（IDFA）或裝置ID",
+                ad_interaction: "廣告互動和產品使用資料",
+                ad_perf: "應用程式效能和診斷資料",
+                advertising_optout: "您可以在首次啟動時拒絕ATT提示，或隨時在「設定」→「隱私與安全」→「追蹤」中退出個人化廣告。",
                 analytics_title: "分析",
-                analytics_desc: "我們可能會使用分析服務來了解應用程式使用情況並改善使用者體驗。這些服務可能會收集匿名化的使用資料，例如應用程式當機、功能使用和工作階段時長。不會收集個人身分資訊。",
+                analytics_desc: "AdMob還收集包括當機報告和效能指標在內的匿名診斷資料，用於改善廣告投放。當機資料不與您的身份相關聯。",
                 section_4_title: "4. 資料安全",
-                section_4_desc: "我們致力於保護您的資訊。由於我們不在伺服器上收集或儲存個人資料，因此與個人資訊相關的資料外洩風險極小。",
+                section_4_desc: "我們致力於保護您的資訊。我們不運營儲存個人資料的自有伺服器。AdMob收集的資料由Google的安全實踐管理。購買交易完全在Apple生態系統內完成，不會與我們或任何第三方共享。",
                 section_5_title: "5. 兒童隱私",
-                section_5_desc: "Sawari不會故意收集13歲以下兒童的任何資訊。由於不收集個人資料，本應用程式對所有年齡層都是安全的。",
+                section_5_desc: "Sawari不针對13歲以下的兒童。我們不會故意收集兒童的個人資訊。本應用程式使用AdMob進行廣告，AdMob對所有用戶應用其自己的資料收集實踐。如果您認為兒童提供了個人資訊，請聯絡我們。",
                 section_6_title: "6. 您的權利",
                 section_6_intro: "您有權：",
-                right_mic: "拒絕麥克風存取（儘管這將阻止調音功能運作）",
+                right_mic: "拒絕麥克風存取（但這將防止調音功能運作）",
+                right_att: "隨時在「設定」→「隱私與安全」→「追蹤」中拒絕或撤銷ATT權限",
                 right_optout: "透過裝置設定退出個人化廣告",
-                right_delete: "隨時刪除應用程式及所有相關資料",
+                right_delete: "隨時刪除應用程式及所有本機資料",
                 section_7_title: "7. 國際使用者",
                 section_7_desc: "Sawari在全球範圍內可用。如果您在居住國以外使用本應用程式，請注意您的資訊可能會被傳輸到我們的服務提供商運營的國家並在那裡處理。",
                 section_8_title: "8. 本政策的變更",
-                section_8_desc: "我們可能會不時更新我們的隱私政策。我們將透過更新本政策頂部的「最後更新日期」來通知您任何更改。在更改後繼續使用本應用程式即表示接受更新後的政策。",
+                section_8_desc: "我們可能不時更新我們的隱私政策。我們將透過更新本政策頂部的「最後更新日期」來通知您任何更改。更改後繼續使用本應用程式即表示接受更新後的政策。",
                 section_9_title: "9. 聯絡我們",
                 section_9_intro: "如果您對本隱私政策有任何疑問，請透過以下方式聯絡我們：",
                 email_label: "電子郵件：",
@@ -512,7 +620,7 @@
             ko: {
                 page_title: "개인정보 보호정책 - Sawari",
                 title: "개인정보 보호정책",
-                last_updated: "최종 업데이트: 2026년 2월 1일",
+                last_updated: "최종 업데이트: 2026년 2월 18일",
                 intro: 'Zijun Fang("당사")는 귀하의 개인정보를 존중합니다. 이 개인정보 보호정책은 Sawari 애플리케이션("앱")에서 정보를 처리하는 방법을 설명합니다.',
                 section_1_title: "1. 수집하는 정보",
                 mic_access_title: "마이크 액세스",
@@ -523,29 +631,49 @@
                 no_recording_desc: "오디오 데이터나 대화를 녹음, 저장 또는 전송하지 않습니다.",
                 no_personal_title: "개인 데이터 없음:",
                 no_personal_desc: "오디오 신호는 음높이 감지용으로만 사용되며 처리 후 즉시 삭제됩니다.",
-                no_collection_title: "개인정보 수집 없음",
-                no_collection_desc: "이름, 이메일 주소, 위치 또는 기기 식별자와 같은 개인 식별 정보(PII)를 수집, 추적 또는 공유하지 않습니다.",
+                att_title: "앱 추적 투명성(ATT)",
+                att_desc: "첫 실행 시 Sawari는 Apple의 App Tracking Transparency 프레임워크를 통해 앱 및 웹사이트 간 추적 허용을 요청합니다. 귀하의 선택에 따라 광고 게재 방식이 결정됩니다:",
+                att_allow_title: "허용하는 경우:",
+                att_allow_desc: "AdMob이 광고 식별자(IDFA)를 사용하여 맞춤형 광고를 게재합니다.",
+                att_deny_title: "거부하는 경우:",
+                att_deny_desc: "AdMob은 비맞춤형 광고만 게재합니다. IDFA는 사용되지 않습니다.",
+                att_change: "설정 > 개인 정보 및 보안 > 추적에서 언제든지 이 설정을 변경할 수 있습니다.",
+                admob_title: "AdMob(Google)을 통해 수집되는 데이터",
+                admob_desc: "앱의 무료 버전은 Google AdMob을 사용하여 광고를 표시합니다. AdMob은 다음 데이터를 수집할 수 있으며, 이 데이터는 귀하의 신원과 연결되어 추적에 사용될 수 있습니다:",
+                admob_location_title: "대략적 위치:",
+                admob_location_desc: "IP 주소로 추정되는 대략적 위치로, 지역 관련 광고 게재에 사용됩니다.",
+                admob_deviceid_title: "기기 ID / IDFA:",
+                admob_deviceid_desc: "광고 타겟팅, 빈도 제한 및 부정 방지에 사용됩니다.",
+                admob_usage_title: "제품 상호작용:",
+                admob_usage_desc: "앱 실행, 탭 및 앱 내 이벤트로 광고 성과를 측정합니다.",
+                admob_addata_title: "광고 데이터:",
+                admob_addata_desc: "표시되고 상호작용한 광고의 기록으로 향후 광고 게재 최적화에 사용됩니다.",
+                admob_perf_title: "성능 데이터:",
+                admob_perf_desc: "앱 실행 시간, 행 비율 및 에너지 사용량으로 광고 로드 성능을 평가합니다. 추적에는 사용되지 않습니다.",
+                admob_crash_title: "충돌 데이터:",
+                admob_crash_desc: "SDK 수준 충돌 보고서로 문제를 진단합니다. 귀하의 신원과 연결되지 않습니다.",
                 section_2_title: "2. 인앱 구매",
-                section_2_desc: "Sawari는 프리미엄 기능을 잠금 해제하기 위한 인앱 구매를 제공합니다. 모든 구매 거래는 Apple App Store를 통해 안전하게 처리됩니다. 당사는 귀하의 결제 정보에 액세스할 수 없습니다. Apple의 개인정보 보호정책이 결제 관련 데이터의 수집 및 사용을 관리합니다.",
+                section_2_desc: "Sawari는 프리미엄 기능을 잠금 해제하기 위한 인앱 구매를 제공합니다. 모든 구매 거래는 Apple App Store를 통해 안전하게 처리됩니다. 당사는 귀하의 결제 정보에 액세스할 수 없습니다. 구매 데이터는 Apple 생태계 내에만 남아 있으며 당사나 제3자와 공유되지 않습니다.",
                 section_3_title: "3. 제3자 서비스",
-                advertising_title: "광고",
-                advertising_desc: "앱의 무료 버전에는 광고가 표시될 수 있습니다. 이러한 광고는 관련 광고를 제공하기 위해 특정 기기 정보를 수집할 수 있는 제3자 광고 파트너가 제공합니다. 여기에는 다음이 포함될 수 있습니다:",
-                ad_device: "기기 유형 및 운영 체제",
-                ad_idfa: "광고 식별자(IDFA)",
-                ad_ip: "IP 주소",
-                ad_interaction: "광고 상호작용 데이터",
-                advertising_optout: "기기 설정을 통해 개인화된 광고를 거부할 수 있습니다. 자세한 내용은 광고 파트너의 개인정보 보호정책을 참조하십시오.",
+                advertising_title: "광고(Google AdMob)",
+                advertising_desc: "앱의 무료 버전은 Google AdMob을 통해 광고를 표시합니다. AdMob은 광고 및 분석 목적으로 다음 데이터를 수집하고 사용할 수 있습니다:",
+                ad_location: "대략적 위치(IP 주소로 추정)",
+                ad_idfa: "광고 식별자(IDFA) 또는 기기 ID",
+                ad_interaction: "광고 상호작용 및 제품 사용 데이터",
+                ad_perf: "앱 성능 및 진단 데이터",
+                advertising_optout: "첫 실행 시 ATT 프롬프트를 거부하거나 언제든지 설정 > 개인 정보 및 보안 > 추적에서 맞춤형 광고를 거부할 수 있습니다.",
                 analytics_title: "분석",
-                analytics_desc: "앱 사용을 이해하고 사용자 경험을 개선하기 위해 분석 서비스를 사용할 수 있습니다. 이러한 서비스는 앱 충돌, 기능 사용 및 세션 시간과 같은 익명화된 사용 데이터를 수집할 수 있습니다. 개인 식별 정보는 수집되지 않습니다.",
+                analytics_desc: "AdMob은 충돌 보고서 및 성능 지표를 포함한 익명화된 진단 데이터도 수집하여 광고 게재를 개선합니다. 충돌 데이터는 귀하의 신원과 연결되지 않습니다.",
                 section_4_title: "4. 데이터 보안",
-                section_4_desc: "당사는 귀하의 정보를 보호하기 위해 최선을 다하고 있습니다. 당사는 서버에서 개인 데이터를 수집하거나 저장하지 않으므로 개인정보와 관련된 데이터 유출 위험이 최소화됩니다.",
+                section_4_desc: "당사는 귀하의 정보를 보호하기 위해 최선을 다하고 있습니다. 당사는 개인 데이터를 저장하는 자체 서버를 운영하지 않습니다. AdMob이 수집한 데이터는 Google의 보안 관행에 따라 관리됩니다. 구매 거래는 Apple 생태계 내에서만 완료되며 당사나 제3자와 공유되지 않습니다.",
                 section_5_title: "5. 아동 개인정보 보호",
-                section_5_desc: "Sawari는 13세 미만 아동으로부터 의도적으로 정보를 수집하지 않습니다. 개인 데이터가 수집되지 않으므로 앱은 모든 연령대에 안전합니다.",
+                section_5_desc: "Sawari는 13세 미만 아동을 대상으로 하지 않습니다. 당사는 아동으로부터 의도적으로 개인정보를 수집하지 않습니다. 앱은 광고에 AdMob을 사용하며, AdMob은 모든 사용자에게 자체 데이터 수집 관행을 적용합니다. 아동이 개인정보를 제공했다고 생각되면 저희에게 연락해 주십시오.",
                 section_6_title: "6. 귀하의 권리",
                 section_6_intro: "귀하는 다음과 같은 권리가 있습니다:",
                 right_mic: "마이크 액세스 거부 (다만 조율 기능이 작동하지 않습니다)",
-                right_optout: "기기 설정을 통해 개인화된 광고 거부",
-                right_delete: "언제든지 앱 및 관련 데이터 삭제",
+                right_att: "언제든지 설정 > 개인 정보 및 보안 > 추적에서 ATT 권한 거부 또는 취소",
+                right_optout: "기기 설정을 통해 맞춤형 광고 거부",
+                right_delete: "언제든지 앱 및 모든 로컬 데이터 삭제",
                 section_7_title: "7. 국제 사용자",
                 section_7_desc: "Sawari는 전 세계적으로 사용할 수 있습니다. 거주 국가 외부에서 앱을 사용하는 경우 귀하의 정보가 당사의 서비스 제공업체가 운영하는 국가로 전송되어 처리될 수 있음을 유의하십시오.",
                 section_8_title: "8. 본 정책의 변경",
@@ -559,47 +687,67 @@
             fr: {
                 page_title: "Politique de Confidentialité - Sawari",
                 title: "Politique de Confidentialité",
-                last_updated: "Dernière mise à jour : 1er février 2026",
-                intro: 'Zijun Fang (« nous », « notre » ou « nos ») respecte votre vie privée. Cette politique de confidentialité explique comment nous traitons les informations dans l\'application Sawari (l\'« Application »).',
+                last_updated: "Dernière mise à jour : 18 février 2026",
+                intro: 'Zijun Fang (« nous », « notre » ou « nos ») respecte votre vie privée. Cette politique de confidentialité explique comment nous traitons les informations dans l\'application Sawari (l\'Application).',
                 section_1_title: "1. Informations Que Nous Collectons",
                 mic_access_title: "Accès au Microphone",
                 mic_access_desc: "Sawari nécessite l'accès au microphone de votre appareil pour détecter la hauteur de votre shamisen à des fins d'accordage.",
-                realtime_title: "Traitement en Temps Réel :",
+                realtime_title: "Traitement en Temps Réel :",
                 realtime_desc: "L'application traite l'audio en temps réel pour calculer la fréquence pour un accordage précis.",
-                no_recording_title: "Aucun Enregistrement :",
+                no_recording_title: "Aucun Enregistrement :",
                 no_recording_desc: "Nous n'enregistrons, ne stockons ni ne transmettons aucune donnée audio ou conversation.",
-                no_personal_title: "Aucune Donnée Personnelle :",
+                no_personal_title: "Aucune Donnée Personnelle :",
                 no_personal_desc: "Le signal audio est utilisé uniquement pour la détection de hauteur et est supprimé immédiatement après le traitement.",
-                no_collection_title: "Aucune Collecte d'Informations Personnelles",
-                no_collection_desc: "Nous ne collectons, ne suivons ni ne partageons aucune information personnellement identifiable (PII), telle que votre nom, adresse e-mail, localisation ou identifiants d'appareil.",
+                att_title: "Transparence du Suivi des Applications (ATT)",
+                att_desc: "Au premier lancement, Sawari vous demandera l'autorisation de suivre votre activité entre les applications et les sites web via le cadre App Tracking Transparency d'Apple. Votre choix détermine la façon dont les publicités sont diffusées :",
+                att_allow_title: "Si vous autorisez :",
+                att_allow_desc: "AdMob utilise votre identifiant publicitaire (IDFA) pour diffuser des publicités personnalisées.",
+                att_deny_title: "Si vous refusez :",
+                att_deny_desc: "AdMob diffuse uniquement des publicités non personnalisées. Votre IDFA n'est pas utilisé.",
+                att_change: "Vous pouvez modifier cette préférence à tout moment dans Réglages > Confidentialité et sécurité > Suivi.",
+                admob_title: "Données Collectées via AdMob (Google)",
+                admob_desc: "La version gratuite de l'application utilise Google AdMob pour afficher des publicités. AdMob peut collecter les données suivantes, qui peuvent être liées à votre identité et utilisées à des fins de suivi :",
+                admob_location_title: "Localisation approximative :",
+                admob_location_desc: "Localisation approximative inférée de votre adresse IP, utilisée pour diffuser des publicités géographiquement pertinentes.",
+                admob_deviceid_title: "ID d'appareil / IDFA :",
+                admob_deviceid_desc: "Utilisé pour le ciblage publicitaire, la limitation de fréquence et la prévention des fraudes.",
+                admob_usage_title: "Interaction avec le produit :",
+                admob_usage_desc: "Lancements d'application, appuis et événements in-app pour mesurer les performances publicitaires.",
+                admob_addata_title: "Données publicitaires :",
+                admob_addata_desc: "Enregistrements des publicités affichées et interagies pour optimiser la diffusion future.",
+                admob_perf_title: "Données de performance :",
+                admob_perf_desc: "Temps de lancement, taux de blocage et consommation énergétique pour évaluer les performances de chargement des publicités. Non utilisé pour le suivi.",
+                admob_crash_title: "Données de plantage :",
+                admob_crash_desc: "Rapports de plantage au niveau du SDK pour diagnostiquer les problèmes. Non liés à votre identité.",
                 section_2_title: "2. Achats Intégrés",
-                section_2_desc: "Sawari propose des achats intégrés pour débloquer des fonctionnalités premium. Toutes les transactions d'achat sont traitées en toute sécurité via l'App Store d'Apple. Nous n'avons pas accès à vos informations de paiement. La politique de confidentialité d'Apple régit la collecte et l'utilisation des données liées aux paiements.",
+                section_2_desc: "Sawari propose des achats intégrés pour débloquer des fonctionnalités premium. Toutes les transactions d'achat sont traitées en toute sécurité via l'App Store d'Apple. Nous n'avons pas accès à vos informations de paiement. Les données d'achat restent entièrement dans l'écosystème Apple et ne sont jamais partagées avec nous ou un tiers.",
                 section_3_title: "3. Services Tiers",
-                advertising_title: "Publicité",
-                advertising_desc: "La version gratuite de l'application peut afficher des publicités. Ces publicités sont diffusées par des partenaires publicitaires tiers qui peuvent collecter certaines informations sur l'appareil pour fournir des publicités pertinentes. Cela peut inclure :",
-                ad_device: "Type d'appareil et système d'exploitation",
-                ad_idfa: "Identifiant publicitaire (IDFA)",
-                ad_ip: "Adresse IP",
-                ad_interaction: "Données d'interaction publicitaire",
-                advertising_optout: "Vous pouvez refuser la publicité personnalisée via les paramètres de votre appareil. Veuillez vous référer aux politiques de confidentialité de vos partenaires publicitaires pour plus d'informations.",
+                advertising_title: "Publicité (Google AdMob)",
+                advertising_desc: "La version gratuite de l'application affiche des publicités via Google AdMob. AdMob peut collecter et utiliser les données suivantes à des fins publicitaires et analytiques :",
+                ad_location: "Localisation approximative (inférée de l'adresse IP)",
+                ad_idfa: "Identifiant publicitaire (IDFA) ou ID d'appareil",
+                ad_interaction: "Données d'interaction publicitaire et d'utilisation du produit",
+                ad_perf: "Données de performance et de diagnostic de l'application",
+                advertising_optout: "Vous pouvez refuser la publicité personnalisée en refusant l'invite ATT au premier lancement, ou à tout moment dans Réglages > Confidentialité et sécurité > Suivi.",
                 analytics_title: "Analytique",
-                analytics_desc: "Nous pouvons utiliser des services d'analyse pour comprendre l'utilisation de l'application et améliorer l'expérience utilisateur. Ces services peuvent collecter des données d'utilisation anonymisées telles que les plantages d'application, l'utilisation des fonctionnalités et la durée des sessions. Aucune information personnellement identifiable n'est collectée.",
+                analytics_desc: "AdMob collecte également des données de diagnostic anonymisées, notamment des rapports de plantage et des indicateurs de performance, pour améliorer la diffusion des publicités. Les données de plantage ne sont pas liées à votre identité.",
                 section_4_title: "4. Sécurité des Données",
-                section_4_desc: "Nous nous engageons à protéger vos informations. Étant donné que nous ne collectons ni ne stockons de données personnelles sur nos serveurs, le risque de violation de données liées aux informations personnelles est minimal.",
+                section_4_desc: "Nous nous engageons à protéger vos informations. Nous n'exploitons pas nos propres serveurs stockant des données personnelles. Les données collectées par AdMob sont régies par les pratiques de sécurité de Google. Les transactions d'achat sont entièrement effectuées dans l'écosystème Apple et ne sont jamais partagées avec nous ou un tiers.",
                 section_5_title: "5. Confidentialité des Enfants",
-                section_5_desc: "Sawari ne collecte sciemment aucune information auprès d'enfants de moins de 13 ans. Étant donné qu'aucune donnée personnelle n'est collectée, l'application est sûre pour tous les âges.",
+                section_5_desc: "Sawari ne s'adresse pas aux enfants de moins de 13 ans. Nous ne collectons pas sciemment d'informations personnelles auprès d'enfants. L'application utilise AdMob pour la publicité, qui applique ses propres pratiques de collecte de données à tous les utilisateurs. Si vous pensez qu'un enfant a fourni des informations personnelles, veuillez nous contacter.",
                 section_6_title: "6. Vos Droits",
-                section_6_intro: "Vous avez le droit de :",
+                section_6_intro: "Vous avez le droit de :",
                 right_mic: "Refuser l'accès au microphone (bien que cela empêche la fonction d'accordage de fonctionner)",
+                right_att: "Refuser ou révoquer l'autorisation ATT à tout moment via Réglages > Confidentialité et sécurité > Suivi",
                 right_optout: "Refuser la publicité personnalisée via les paramètres de l'appareil",
-                right_delete: "Supprimer l'application et toutes les données associées à tout moment",
+                right_delete: "Supprimer l'application et toutes les données locales à tout moment",
                 section_7_title: "7. Utilisateurs Internationaux",
                 section_7_desc: "Sawari est disponible dans le monde entier. Si vous utilisez l'application en dehors de votre pays de résidence, veuillez noter que vos informations peuvent être transférées vers et traitées dans des pays où nos prestataires de services opèrent.",
                 section_8_title: "8. Modifications de Cette Politique",
                 section_8_desc: "Nous pouvons mettre à jour notre politique de confidentialité de temps en temps. Nous vous informerons de tout changement en mettant à jour la date de \"Dernière mise à jour\" en haut de cette politique. L'utilisation continue de l'application après les modifications constitue une acceptation de la politique mise à jour.",
                 section_9_title: "9. Nous Contacter",
-                section_9_intro: "Si vous avez des questions concernant cette politique de confidentialité, veuillez nous contacter à :",
-                email_label: "E-mail :",
+                section_9_intro: "Si vous avez des questions concernant cette politique de confidentialité, veuillez nous contacter à :",
+                email_label: "E-mail :",
                 footer_copyright: "© 2026 Zijun Fang. Tous droits réservés.",
                 footer_app: "Sawari - Application d'Accordage de Shamisen"
             }

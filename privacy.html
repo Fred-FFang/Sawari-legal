@@ -214,7 +214,7 @@
         </select>
     </div>
 
-    <div class="container">
+    <main class="container">
         <h1 data-i18n="title">Privacy Policy</h1>
         <p class="last-updated" data-i18n="last_updated">Last Updated: February 18, 2026</p>
 
@@ -230,13 +230,13 @@
             shamisen for tuning purposes.</p>
 
         <div class="highlight">
-            <ul>
-                <li><strong data-i18n="realtime_title">Real-time Processing:</strong> <span
+            <ul role="list">
+                <li role="listitem"><strong data-i18n="realtime_title">Real-time Processing:</strong> <span
                         data-i18n="realtime_desc">The App processes audio in real-time to calculate frequency for
                         accurate tuning.</span></li>
-                <li><strong data-i18n="no_recording_title">No Recording:</strong> <span data-i18n="no_recording_desc">We
+                <li role="listitem"><strong data-i18n="no_recording_title">No Recording:</strong> <span data-i18n="no_recording_desc">We
                         do not record, store, or transmit any audio data or conversations.</span></li>
-                <li><strong data-i18n="no_personal_title">No Personal Data:</strong> <span
+                <li role="listitem"><strong data-i18n="no_personal_title">No Personal Data:</strong> <span
                         data-i18n="no_personal_desc">The audio signal is used solely for pitch detection and is
                         discarded immediately after processing.</span></li>
             </ul>
@@ -245,10 +245,10 @@
         <h3 data-i18n="att_title">App Tracking Transparency (ATT)</h3>
         <p data-i18n="att_desc">On first launch, Sawari will ask for your permission to track your activity across apps
             and websites via Apple's App Tracking Transparency framework. Your choice controls how ads are served:</p>
-        <ul>
-            <li><strong data-i18n="att_allow_title">If you allow:</strong> <span data-i18n="att_allow_desc">AdMob uses
+        <ul role="list">
+            <li role="listitem"><strong data-i18n="att_allow_title">If you allow:</strong> <span data-i18n="att_allow_desc">AdMob uses
                     your Advertising Identifier (IDFA) to serve personalized ads.</span></li>
-            <li><strong data-i18n="att_deny_title">If you deny:</strong> <span data-i18n="att_deny_desc">AdMob serves
+            <li role="listitem"><strong data-i18n="att_deny_title">If you deny:</strong> <span data-i18n="att_deny_desc">AdMob serves
                     non-personalized ads only. Your IDFA is not used.</span></li>
         </ul>
         <p data-i18n="att_change">You can change this preference at any time in Settings &gt; Privacy &amp; Security
@@ -257,23 +257,23 @@
         <h3 data-i18n="admob_title">Data Collected via AdMob (Google)</h3>
         <p data-i18n="admob_desc">The free version of the App uses Google AdMob to display advertisements. AdMob
             collects the following data, which may be linked to your identity and used for tracking:</p>
-        <ul>
-            <li><strong data-i18n="admob_location_title">Coarse Location:</strong> <span
+        <ul role="list">
+            <li role="listitem"><strong data-i18n="admob_location_title">Coarse Location:</strong> <span
                     data-i18n="admob_location_desc">Approximate location inferred from your IP address, used to serve
                     geographically relevant ads.</span></li>
-            <li><strong data-i18n="admob_deviceid_title">Device ID / IDFA:</strong> <span
+            <li role="listitem"><strong data-i18n="admob_deviceid_title">Device ID / IDFA:</strong> <span
                     data-i18n="admob_deviceid_desc">Used for ad targeting, frequency capping, and fraud
                     prevention.</span></li>
-            <li><strong data-i18n="admob_usage_title">Product Interaction:</strong> <span
+            <li role="listitem"><strong data-i18n="admob_usage_title">Product Interaction:</strong> <span
                     data-i18n="admob_usage_desc">App launches, taps, and in-app events to measure ad performance.</span>
             </li>
-            <li><strong data-i18n="admob_addata_title">Advertising Data:</strong> <span
+            <li role="listitem"><strong data-i18n="admob_addata_title">Advertising Data:</strong> <span
                     data-i18n="admob_addata_desc">Records of which ads were shown and interacted with to optimize future
                     ad delivery.</span></li>
-            <li><strong data-i18n="admob_perf_title">Performance Data:</strong> <span data-i18n="admob_perf_desc">App
+            <li role="listitem"><strong data-i18n="admob_perf_title">Performance Data:</strong> <span data-i18n="admob_perf_desc">App
                     launch time, hang rate, and energy usage to evaluate ad load performance. Not used for
                     tracking.</span></li>
-            <li><strong data-i18n="admob_crash_title">Crash Data:</strong> <span data-i18n="admob_crash_desc">SDK-level
+            <li role="listitem"><strong data-i18n="admob_crash_title">Crash Data:</strong> <span data-i18n="admob_crash_desc">SDK-level
                     crash reports to diagnose issues. Not linked to your identity.</span></li>
         </ul>
 
@@ -288,7 +288,7 @@
         <h3 data-i18n="advertising_title">Advertising (Google AdMob)</h3>
         <p data-i18n="advertising_desc">The free version of the App displays advertisements via Google AdMob. AdMob may
             collect and use the following data for advertising and analytics purposes:</p>
-        <ul>
+        <ul role="list">
             <li data-i18n="ad_location">Coarse location (inferred from IP address)</li>
             <li data-i18n="ad_idfa">Advertising identifier (IDFA) or device ID</li>
             <li data-i18n="ad_interaction">Ad interaction and product usage data</li>
@@ -316,7 +316,7 @@
 
         <h2 data-i18n="section_6_title">6. Your Rights</h2>
         <p data-i18n="section_6_intro">You have the right to:</p>
-        <ul>
+        <ul role="list">
             <li data-i18n="right_mic">Deny microphone access (though this will prevent the tuning feature from working)
             </li>
             <li data-i18n="right_att">Deny or revoke App Tracking Transparency permission at any time via Settings &gt;
@@ -341,11 +341,11 @@
         <p><strong data-i18n="email_label">Email:</strong> <a href="mailto:sawari.tuner@gmail.com"
                 style="color: #667eea;">sawari.tuner@gmail.com</a></p>
 
-        <div class="footer">
+        <footer class="footer">
             <p data-i18n="footer_copyright">&copy; 2026 Zijun Fang. All rights reserved.</p>
             <p data-i18n="footer_app">Sawari - Shamisen Tuning App</p>
-        </div>
-    </div>
+        </footer>
+    </main>
 
     <script>
         const translations = {

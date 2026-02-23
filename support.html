@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Support and FAQ for Sawari - Shamisen Tuning App">
+    <title data-i18n="page_title">Support & FAQ - Sawari</title>
+    <style>
+        :root {
+            --app-background: #ffffff;
+            --glass-overlay: rgba(255, 255, 255, 0.3);
+            --glass-border: rgba(0, 0, 0, 0.1);
+            --text-primary: #000000;
+            --text-secondary: rgba(0, 0, 0, 0.6);
+            --accent-color: #007aff;
+            --font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            --corner-radius: 45px;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --app-background: #000000;
+                --glass-overlay: rgba(0, 0, 0, 0.3);
+                --glass-border: rgba(255, 255, 255, 0.1);
+                --text-primary: #ffffff;
+                --text-secondary: rgba(255, 255, 255, 0.6);
+                --accent-color: #0a84ff;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body {
+            font-family: var(--font-family);
+            line-height: 1.6;
+            color: var(--text-primary);
+            background-color: var(--app-background);
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .language-selector {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .language-selector select {
+            background: var(--glass-overlay);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            color: var(--text-primary);
+            padding: 8px 28px 8px 12px;
+            font-size: 15px;
+            font-family: var(--font-family);
+            cursor: pointer;
+            appearance: none;
+            background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8"%3E%3Cpath fill="%23007aff" d="M6 8L0 0h12z"/%3E%3C/svg%3E');
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .language-selector select {
+                background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8"%3E%3Cpath fill="%230a84ff" d="M6 8L0 0h12z"/%3E%3C/svg%3E');
+            }
+        }
+
+        .language-selector select:focus {
+            outline: 2px solid var(--accent-color);
+            outline-offset: 2px;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            margin: 20px auto;
+            background: var(--glass-overlay);
+            -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+            border-radius: var(--corner-radius);
+            padding: 40px;
+            border: 1px solid var(--glass-border);
+        }
+
+        h1 {
+            color: var(--text-primary);
+            font-size: 34px;
+            letter-spacing: 0.37px;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+
+        .last-updated {
+            color: var(--text-secondary);
+            font-size: 15px;
+            margin-bottom: 32px;
+            font-weight: 400;
+        }
+
+        h2 {
+            color: var(--text-primary);
+            font-size: 22px;
+            letter-spacing: 0.35px;
+            margin-top: 32px;
+            margin-bottom: 16px;
+            font-weight: 600;
+        }
+
+        h3 {
+            color: var(--text-primary);
+            font-size: 17px;
+            letter-spacing: -0.41px;
+            margin-top: 24px;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: var(--text-primary);
+            font-size: 17px;
+            letter-spacing: -0.41px;
+        }
+
+        ul,
+        ol {
+            margin-left: 20px;
+            margin-bottom: 16px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: var(--text-primary);
+            font-size: 17px;
+            letter-spacing: -0.41px;
+        }
+
+        strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .highlight {
+            background: var(--glass-overlay);
+            padding: 20px;
+            border-radius: 20px;
+            margin: 20px 0;
+            border: 1px solid var(--glass-border);
+        }
+
+        .faq-item {
+            margin-bottom: 24px;
+        }
+        
+        .faq-question {
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+            font-size: 18px;
+        }
+        
+        .faq-answer {
+            color: var(--text-secondary);
+        }
+
+        .footer {
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 1px solid var(--glass-border);
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 13px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 16px;
+            }
+
+            .language-selector {
+                top: 16px;
+                right: 16px;
+            }
+
+            .container {
+                padding: 24px;
+                margin: 0;
+                border-radius: 34px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="language-selector">
+        <select id="languageSelect" aria-label="Select Language">
+            <option value="en">English</option>
+            <option value="ja">日本語</option>
+            <option value="zh-Hans">简体中文</option>
+            <option value="zh-Hant">繁體中文</option>
+            <option value="ko">한국어</option>
+            <option value="fr">Français</option>
+        </select>
+    </div>
+
+    <main class="container">
+        <h1 data-i18n="title">Support & FAQ</h1>
+        <p class="last-updated"><span data-i18n="contact_intro">Need help with Sawari? You're in the right place.</span></p>
+
+        <h2 data-i18n="section_contact">Contact Us</h2>
+        <div class="highlight">
+            <p data-i18n="contact_desc">If you have any questions, feedback, or issues, please reach out to us at:</p>
+            <p><strong data-i18n="email_label">Email:</strong> <a href="mailto:sawari.tuner@gmail.com"
+                    style="font-weight: bold;">sawari.tuner@gmail.com</a></p>
+            <p data-i18n="contact_response">We aim to respond to all inquiries within 24-48 hours.</p>
+        </div>
+
+        <h2 data-i18n="section_faq">Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <div class="faq-question" data-i18n="faq_1_q">The app is not detecting my shamisen's sound well. What should I do?</div>
+            <div class="faq-answer" data-i18n="faq_1_a">Ensure you are in a quiet environment. Sawari is sensitive to other noises. Also, check that Sawari has permission to use your device's microphone in your device Settings. Try placing the device closer to the instrument.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" data-i18n="faq_2_q">How do I restore my past purchases?</div>
+            <div class="faq-answer" data-i18n="faq_2_a">Open the settings or upgrade screen within the app and tap "Restore Purchases". Ensure you are logged into the same Apple ID you used to make the original purchase.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" data-i18n="faq_3_q">What is the "Auto-Advance" feature?</div>
+            <div class="faq-answer" data-i18n="faq_3_a">Available in Premium, Auto-Advance allows hands-free tuning. Once you tune a string perfectly and hold it for one second, the app automatically switches to the next string so you don't have to touch your phone.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" data-i18n="faq_4_q">Can I change the base pitch (A4)?</div>
+            <div class="faq-answer" data-i18n="faq_4_a">Yes. You can tap the A4 frequency display on the main tuner screen to adjust the concert pitch anywhere from 432 Hz to 448 Hz.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" data-i18n="faq_5_q">Does this work for other instruments?</div>
+            <div class="faq-answer" data-i18n="faq_5_a">Sawari is specifically optimized for the Tsugaru shamisen's frequency range and overtones. While it may pick up other instruments, it is solely designed and calibrated for the Japanese shamisen.</div>
+        </div>
+
+        <footer class="footer">
+            <p data-i18n="footer_copyright">&copy; 2026 Zijun Fang. All rights reserved.</p>
+            <p data-i18n="footer_app">Sawari - Shamisen Tuning App</p>
+        </footer>
+    </main>
+
+    <script>
+        const translations = {
+            en: {
+                page_title: "Support & FAQ - Sawari",
+                title: "Support & FAQ",
+                contact_intro: "Need help with Sawari? You're in the right place.",
+                section_contact: "Contact Us",
+                contact_desc: "If you have any questions, feedback, or issues, please reach out to us at:",
+                email_label: "Email:",
+                contact_response: "We aim to respond to all inquiries within 24-48 hours.",
+                section_faq: "Frequently Asked Questions",
+                faq_1_q: "The app is not detecting my shamisen's sound well. What should I do?",
+                faq_1_a: "Ensure you are in a quiet environment. Sawari is sensitive to other noises. Also, check that Sawari has permission to use your device's microphone in your device Settings. Try placing the device closer to the instrument.",
+                faq_2_q: "How do I restore my past purchases?",
+                faq_2_a: "Open the settings or upgrade screen within the app and tap \"Restore Purchases\". Ensure you are logged into the same Apple ID you used to make the original purchase.",
+                faq_3_q: "What is the \"Auto-Advance\" feature?",
+                faq_3_a: "Available in Premium, Auto-Advance allows hands-free tuning. Once you tune a string perfectly and hold it for one second, the app automatically switches to the next string so you don't have to touch your phone.",
+                faq_4_q: "Can I change the base pitch (A4)?",
+                faq_4_a: "Yes. You can tap the A4 frequency display on the main tuner screen to adjust the concert pitch anywhere from 432 Hz to 448 Hz.",
+                faq_5_q: "Does this work for other instruments?",
+                faq_5_a: "Sawari is specifically optimized for the Tsugaru shamisen's frequency range and overtones. While it may pick up other instruments, it is solely designed and calibrated for the Japanese shamisen.",
+                footer_copyright: "© 2026 Zijun Fang. All rights reserved.",
+                footer_app: "Sawari - Shamisen Tuning App"
+            },
+            ja: {
+                page_title: "サポート＆FAQ - Sawari",
+                title: "サポート＆FAQ",
+                contact_intro: "Sawariのご利用でお困りですか？",
+                section_contact: "お問い合わせ",
+                contact_desc: "ご質問、フィードバック、問題などがございましたら、以下までご連絡ください：",
+                email_label: "メール：",
+                contact_response: "通常、24〜48時間以内に返信いたします。",
+                section_faq: "よくあるご質問（FAQ）",
+                faq_1_q: "三味線の音をうまく検出してくれません。どうすればよいですか？",
+                faq_1_a: "静かな環境でご利用ください。Sawariは周囲の雑音に敏感です。また、端末の「設定」でSawariのマイクへのアクセスが許可されているかご確認ください。楽器に端末を近づけてお試しください。",
+                faq_2_q: "過去の購入を復元するにはどうすればよいですか？",
+                faq_2_a: "アプリ内の設定またはアップグレード画面を開き、「購入の復元」をタップしてください。元の購入を行ったのと同じApple IDでログインしていることをご確認ください。",
+                faq_3_q: "「自動進行」機能とは何ですか？",
+                faq_3_a: "プレミアム版の機能で、ハンズフリーでの調弦を可能にします。１つの糸を正確に合わせ、1秒間保持すると、アプリが自動的に次の糸に切り替わるため、スマホに触れる必要がありません。",
+                faq_4_q: "基準ピッチ（A4）は変更できますか？",
+                faq_4_a: "はい。メインのチューナー画面にあるA4の周波数表示をタップすると、基準ピッチを432Hzから448Hzの間で調整できます。",
+                faq_5_q: "他の楽器でも使えますか？",
+                faq_5_a: "Sawariは津軽三味線の周波数帯と倍音に最適化されています。他の楽器の音を拾うこともありますが、設計および調整は日本の三味線専用に行われています。",
+                footer_copyright: "© 2026 Zijun Fang. All rights reserved.",
+                footer_app: "Sawari - 三味線チューニングアプリ"
+            },
+            "zh-Hans": {
+                page_title: "支持与常见问题 - Sawari",
+                title: "支持与常见问题",
+                contact_intro: "需要 Sawari 的帮助吗？您来对地方了。",
+                section_contact: "联系我们",
+                contact_desc: "如果您有任何疑问、反馈或遇到了问题，请通过以下方式联系我们：",
+                email_label: "电子邮件：",
+                contact_response: "我们争取在 24-48 小时内回复您的所有咨询。",
+                section_faq: "常见问题",
+                faq_1_q: "应用程序可能无法很好地检测到三味线的声音。我该怎么办？",
+                faq_1_a: "请确保您身处安静的环境中。Sawari 对其他噪音很敏感。另外，检查您的设备设置中是否已允许 Sawari 访问设备的麦克风。尝试将设备放得更靠近乐器。",
+                faq_2_q: "如何恢复过去的购买？",
+                faq_2_a: "打开应用内的设置或升级屏幕，点击“恢复购买”。确保您登录的是进行原始购买时使用的同一个 Apple ID。",
+                faq_3_q: "什么是“自动跳转”功能？",
+                faq_3_a: "这是高级版的功能，允许您解放双手进行调音。一旦您将一根弦调到完美音准并保持一秒钟，应用程序就会自动切换到下一根弦，无需触摸手机。",
+                faq_4_q: "我可以改变基础音高（A4）吗？",
+                faq_4_a: "可以。您可以点击主调音器屏幕上的 A4 频率，在 432 Hz 到 448 Hz 之间任意调整基准音高。",
+                faq_5_q: "其他乐器可以使用吗？",
+                faq_5_a: "Sawari 专门针对津轻三味线的频率范围和泛音进行了优化。虽然它可能也可以检测其他乐器的声音，但其设计和校准仅适用于日本三味线。",
+                footer_copyright: "© 2026 Zijun Fang. 保留所有权利。",
+                footer_app: "Sawari - 三味线调音应用"
+            },
+            "zh-Hant": {
+                page_title: "支援與常見問題 - Sawari",
+                title: "支援與常見問題",
+                contact_intro: "需要 Sawari 的幫助嗎？您來對地方了。",
+                section_contact: "聯絡我們",
+                contact_desc: "如果您有任何疑問、反饋或遇到了問題，請透過以下方式聯絡我們：",
+                email_label: "電子郵件：",
+                contact_response: "我們爭取在 24-48 小時內回覆您的所有諮詢。",
+                section_faq: "常見問題",
+                faq_1_q: "應用程式可能無法很好地檢測到三味線的聲音。我該怎麼辦？",
+                faq_1_a: "請確保您身處安靜的環境中。Sawari 對其他噪音很敏感。另外，檢查您的裝置設定中是否已允許 Sawari 存取裝置的麥克風。嘗試將裝置放得更靠近樂器。",
+                faq_2_q: "如何恢復過去的購買？",
+                faq_2_a: "打開應用內的設定或升級畫面，點擊「恢復購買」。確保您登入的是進行原始購買時使用的同一個 Apple ID。",
+                faq_3_q: "什麼是「自動跳轉」功能？",
+                faq_3_a: "這是高級版的功能，允許您解放雙手進行調音。一旦您將一根弦調到完美音準並保持一秒鐘，應用程式就會自動切換到下一根弦，無需觸摸手機。",
+                faq_4_q: "我可以改變基礎音高（A4）嗎？",
+                faq_4_a: "可以。您可以點擊主調音器畫面上的 A4 頻率，在 432 Hz 到 448 Hz 之間任意調整基準音高。",
+                faq_5_q: "其他樂器可以使用嗎？",
+                faq_5_a: "Sawari 專門針對津輕三味線的頻率範圍和泛音進行了優化。雖然它可能也可以檢測其他樂器的聲音，但其設計和校準僅適用於日本三味線。",
+                footer_copyright: "© 2026 Zijun Fang. 保留所有權利。",
+                footer_app: "Sawari - 三味線調音應用程式"
+            },
+            ko: {
+                page_title: "지원 및 FAQ - Sawari",
+                title: "지원 및 FAQ",
+                contact_intro: "Sawari와 관련하여 도움이 필요하신가요?",
+                section_contact: "문의하기",
+                contact_desc: "질문, 피드백 또는 문제가 있는 경우 아래로 문의해 주십시오:",
+                email_label: "이메일:",
+                contact_response: "일반적으로 24~48시간 이내에 답변을 드립니다.",
+                section_faq: "자주 묻는 질문 (FAQ)",
+                faq_1_q: "앱이 샤미센 소리를 잘 감지하지 못합니다. 어떻게 해야 하나요?",
+                faq_1_a: "조용한 환경에 있는지 확인하세요. Sawari는 주변 소음에 민감합니다. 또한 기기 설정에서 Sawari에 대한 마이크 접근이 허용되어 있는지 확인하세요. 기기를 악기에 더 가까이 두고 시도해 보세요.",
+                faq_2_q: "이전 구매를 어떻게 복원하나요?",
+                faq_2_a: "앱 내 설정 또는 업그레이드 화면을 열고 '구매 복원'을 누르세요. 최초 구매 시 사용했던 것과 동일한 Apple ID로 로그인되어 있는지 확인하세요.",
+                faq_3_q: "'자동 넘김' 기능은 무엇인가요?",
+                faq_3_a: "프리미엄 이상 버전의 기능으로, 손을 대지 않고 조율할 수 있습니다. 한 줄을 정확하게 조율하고 1초간 유지하면, 스마트폰을 터치할 필요 없이 자동으로 다음 줄로 전환됩니다.",
+                faq_4_q: "기준 음높이(A4)를 변경할 수 있나요?",
+                faq_4_a: "네. 메인 튜너 화면에서 A4 주파수를 누르면 기준 피치를 432Hz에서 448Hz 사이에서 조정할 수 있습니다.",
+                faq_5_q: "다른 악기에도 사용할 수 있나요?",
+                faq_5_a: "Sawari는 쓰가루 샤미센의 주파수 대역 및 배음에 최적화되어 있습니다. 다른 악기의 소리도 감지할 수는 있으나, 오직 일본 샤미센 조율에 맞게 특화 설계되었습니다.",
+                footer_copyright: "© 2026 Zijun Fang. All rights reserved.",
+                footer_app: "Sawari - 샤미센 조율 앱"
+            },
+            fr: {
+                page_title: "Support et FAQ - Sawari",
+                title: "Support et FAQ",
+                contact_intro: "Besoin d'aide avec Sawari ? Vous êtes au bon endroit.",
+                section_contact: "Nous Contacter",
+                contact_desc: "Si vous avez des questions, des commentaires ou des problèmes, veuillez nous contacter à l'adresse suivante :",
+                email_label: "E-mail:",
+                contact_response: "Nous nous efforçons de répondre à toutes les demandes dans un délai de 24 à 48 heures.",
+                section_faq: "Foire Aux Questions",
+                faq_1_q: "L'application ne détecte pas bien le son de mon shamisen. Que dois-je faire ?",
+                faq_1_a: "Assurez-vous d'être dans un environnement calme. Sawari est sensible aux autres bruits. Vérifiez également dans les paramètres de votre appareil que Sawari est autorisé à utiliser le microphone. Essayez de placer l'appareil plus près de l'instrument.",
+                faq_2_q: "Comment restaurer mes achats passés ?",
+                faq_2_a: "Ouvrez l'écran des paramètres ou de mise à niveau dans l'application et appuyez sur « Restaurer les Achats ». Assurez-vous d'être connecté avec le même identifiant Apple que celui utilisé lors de l'achat d'origine.",
+                faq_3_q: "Qu'est-ce que la fonction « Avance Automatique » ?",
+                faq_3_a: "Disponible en Premium, l'avance automatique permet un accordage sans les mains. Une fois qu'une corde est parfaitement accordée et maintenue pendant une seconde, l'application passe automatiquement à la corde suivante pour que vous n'ayez pas à toucher votre téléphone.",
+                faq_4_q: "Puis-je modifier le diapason de base (A4) ?",
+                faq_4_a: "Oui. Vous pouvez appuyer sur l'affichage de la fréquence A4 sur l'écran principal de l'accordeur pour ajuster le diapason entre 432 Hz et 448 Hz.",
+                faq_5_q: "Est-ce que ça marche pour d'autres instruments ?",
+                faq_5_a: "Sawari est spécifiquement optimisé pour la gamme de fréquences et les harmoniques du shamisen Tsugaru. Bien qu'il puisse capter d'autres instruments, il est exclusivement conçu et étalonné pour le shamisen japonais.",
+                footer_copyright: "© 2026 Zijun Fang. Tous droits réservés.",
+                footer_app: "Sawari - Application d'Accordage de Shamisen"
+            }
+        };
+
+        // Language detection and switching
+        function detectLanguage() {
+            // Check localStorage first
+            const savedLang = localStorage.getItem('sawari_language');
+            if (savedLang && translations[savedLang]) {
+                return savedLang;
+            }
+
+            // Detect from browser language
+            const browserLang = navigator.language || navigator.userLanguage;
+
+            // Map browser language codes to app languages
+            if (browserLang.startsWith('ja')) return 'ja';
+            if (browserLang.startsWith('ko')) return 'ko';
+            if (browserLang.startsWith('fr')) return 'fr';
+            if (browserLang === 'zh-CN' || browserLang === 'zh-Hans' || browserLang.startsWith('zh-Hans')) return 'zh-Hans';
+            if (browserLang === 'zh-TW' || browserLang === 'zh-Hant' || browserLang.startsWith('zh-Hant')) return 'zh-Hant';
+            if (browserLang.startsWith('zh')) return 'zh-Hans'; // Default to simplified Chinese
+
+            return 'en'; // Default to English
+        }
+
+        function setLanguage(lang) {
+            const t = translations[lang];
+            if (!t) return;
+
+            // Update all elements with data-i18n attribute
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                if (t[key]) {
+                    element.innerHTML = t[key]; // Changed to innerHTML to allow markup like <br> if needed
+                }
+            });
+
+            // Update page title
+            document.title = t.page_title;
+
+            // Update HTML lang attribute
+            document.documentElement.lang = lang;
+
+            // Save to localStorage
+            localStorage.setItem('sawari_language', lang);
+
+            // Update select value
+            document.getElementById('languageSelect').value = lang;
+        }
+
+        // Initialize language
+        document.addEventListener('DOMContentLoaded', () => {
+            const lang = detectLanguage();
+            setLanguage(lang);
+
+            // Add event listener to select
+            document.getElementById('languageSelect').addEventListener('change', (e) => {
+                setLanguage(e.target.value);
+            });
+        });
+    </script>
+</body>
+
+</html>
